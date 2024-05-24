@@ -1,4 +1,4 @@
-package com.soten.omdb.domain.model
+package com.soten.omdb.domain.model.detail
 
 data class MovieDetailModel(
     val actors: String,

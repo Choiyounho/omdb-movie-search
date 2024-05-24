@@ -15,7 +15,7 @@ data class MovieDetailResponse(
     @SerialName("Country")
     val country: String,
     @SerialName("DVD")
-    val dVD: String,
+    val dvd: String,
     @SerialName("Director")
     val director: String,
     @SerialName("Genre")
@@ -39,7 +39,7 @@ data class MovieDetailResponse(
     @SerialName("Rated")
     val rated: String,
     @SerialName("Ratings")
-    val ratings: List<Rating>,
+    val ratings: List<RatingResponse>,
     @SerialName("Released")
     val released: String,
     @SerialName("Response")
