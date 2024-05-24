@@ -21,4 +21,6 @@ dependencyResolutionManagement {
 
 rootProject.name = "omdb"
 include(":app")
- 
+include(":domain")
+include(":data")
+include(":remote")
