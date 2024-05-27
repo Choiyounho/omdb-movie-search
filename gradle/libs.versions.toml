@@ -12,6 +12,8 @@ constraintlayout = "2.1.4"
 androidxLifecycle = "2.7.0"
 fragment = "1.7.1"
 
+paging = "3.3.0"
+
 hilt = "2.45"
 
 okhttp3 = "4.10.0"
@@ -48,6 +50,9 @@ okhttp3-logging-interceptor = { group = "com.squareup.okhttp3", name = "logging-
 
 kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinxSerializationJson" }
 retrofit-serialization = { group = "com.jakewharton.retrofit", name = "retrofit2-kotlinx-serialization-converter", version.ref = "retrofitSerialization" }
+
+paging-runtime = { module = "androidx.paging:paging-runtime", version.ref = "paging" }
+paging-common = { module = "androidx.paging:paging-common", version.ref = "paging" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }

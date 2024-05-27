@@ -65,4 +65,6 @@ dependencies {
 
     implementation(libs.glide)
     kapt(libs.glide.compile)
+
+    implementation(libs.paging.runtime)
 }
