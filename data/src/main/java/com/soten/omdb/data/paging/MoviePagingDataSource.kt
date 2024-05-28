@@ -28,7 +28,7 @@ class MoviePagingDataSource @Inject constructor(
                 nextKey = if (movies.isEmpty()) null else page + 1
             )
         } catch (e: IOException) {
-            return LoadResult.Error(e)
+            LoadResult.Error(e)
         } catch (e: Exception) {
             LoadResult.Error(e)
         }

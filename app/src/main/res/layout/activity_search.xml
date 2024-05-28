@@ -26,12 +26,13 @@
             android:drawableStart="@drawable/icon_search"
             android:drawableEnd="@drawable/icon_delete"
             android:drawablePadding="8dp"
-            android:hint="검색 하는 내용 입니다."
-            android:inputType="text"
+            android:hint="검색어를 입력하세요."
             android:imeOptions="actionSearch"
+            android:inputType="text"
             android:maxLines="1"
             android:paddingStart="20dp"
-            android:paddingEnd="18dp" />
+            android:paddingEnd="18dp"
+            android:text="star" />
     </androidx.cardview.widget.CardView>
 
     <androidx.recyclerview.widget.RecyclerView
@@ -41,4 +42,30 @@
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/searchContainer" />
+
+    <LinearLayout
+        android:id="@+id/errorContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="검색 결과가 존재 하지 않거나\n네트워크 연결이 원활하지 않습니다." />
+
+        <Button
+            android:id="@+id/retryButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:clickable="false"
+            android:text="재시도" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
