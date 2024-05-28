@@ -4,6 +4,7 @@ import android.text.Editable
 import android.text.TextWatcher
 import android.widget.EditText
 import android.widget.ImageView
+import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
 import kotlinx.coroutines.channels.awaitClose
@@ -38,3 +39,7 @@ fun EditText.textChangesToFlow(): Flow<CharSequence?> {
         }
     }
 }
+
+fun RecyclerView.Adapter<*>.isEmpty() = runCatching {
+    itemCount == 0
+}.getOrDefault(true)
