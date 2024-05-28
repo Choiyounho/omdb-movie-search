@@ -51,6 +51,10 @@ okhttp3-logging-interceptor = { group = "com.squareup.okhttp3", name = "logging-
 kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinxSerializationJson" }
 retrofit-serialization = { group = "com.jakewharton.retrofit", name = "retrofit2-kotlinx-serialization-converter", version.ref = "retrofitSerialization" }
 
+kotlinx-coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "kotlin" }
+
+javaxInject = { group = "javax.inject", name = "javax.inject", version = "1" }
+
 paging-runtime = { module = "androidx.paging:paging-runtime", version.ref = "paging" }
 paging-common = { module = "androidx.paging:paging-common", version.ref = "paging" }
 
