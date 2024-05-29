@@ -10,6 +10,7 @@ import androidx.paging.PagingData
 import com.soten.omdb.databinding.ActivitySearchBinding
 import com.soten.omdb.extension.isEmpty
 import com.soten.omdb.extension.textChangesToFlow
+import com.soten.omdb.ui.detail.DetailActivity
 import com.soten.omdb.ui.search.adapter.MovieAdapter
 import com.soten.omdb.ui.search.adapter.MovieLoadStateAdapter
 import dagger.hilt.android.AndroidEntryPoint
@@ -28,7 +29,7 @@ class SearchActivity : AppCompatActivity() {
     private val searchViewModel by viewModels<SearchViewModel>()
 
     private val movieAdapter = MovieAdapter { imdbID ->
-        // TODO
+        startActivity(DetailActivity.newInstance(this, imdbID))
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
