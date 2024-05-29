@@ -31,7 +31,7 @@
         android:maxLines="1"
         android:textColor="@color/black"
         android:textStyle="bold"
-        android:textSize="18sp"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageContainer"
         app:layout_constraintTop_toTopOf="@+id/imageContainer"
@@ -44,7 +44,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:textColor="@color/black"
-        android:textSize="14sp"
+        android:textSize="12sp"
         app:layout_constraintStart_toEndOf="@+id/imageContainer"
         app:layout_constraintTop_toBottomOf="@+id/movieTitle"
         tools:text="2024" />
