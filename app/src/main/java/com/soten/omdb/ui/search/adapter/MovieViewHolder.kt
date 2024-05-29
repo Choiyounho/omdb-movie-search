@@ -13,6 +13,8 @@ class MovieViewHolder(
 
     fun bind(movie: MovieModel, onItemClicked: (String) -> Unit) {
         binding.moviePoster.load(movie.poster)
+        binding.movieTitle.text = movie.title
+        binding.releaseYear.text = movie.year
 
         binding.root.setOnClickListener {
             onItemClicked(movie.imdbID)
